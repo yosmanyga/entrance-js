@@ -1,0 +1,30 @@
+{
+  "name": "@yosmy/identification",
+  "version": "0.1.0",
+  "private": true,
+  "main": "build/index.js",
+  "dependencies": {
+    "@yosmy/compound-ui": "git+https://github.com/yosmy/compound-ui.git",
+    "lodash": "4.17.15",
+    "prop-types": "15.7.2",
+    "react": "16.12.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.8.4",
+    "@babel/core": "7.8.4",
+    "@babel/plugin-proposal-class-properties": "7.8.3",
+    "@babel/plugin-proposal-object-rest-spread": "7.8.3",
+    "@babel/plugin-transform-react-jsx": "7.8.3",
+    "@babel/preset-env": "7.8.4",
+    "@storybook/addon-actions": "5.3.13",
+    "@storybook/addon-links": "5.3.13",
+    "@storybook/addons": "5.3.13",
+    "@storybook/react": "5.3.13",
+    "@yosmy/simple-ui": "git+https://github.com/yosmy/abstract-simple-ui.git",
+    "babel-loader": "8.0.6"
+  },
+  "scripts": {
+    "storybook": "start-storybook -p 6006 -c test/.storybook --ci",
+    "build-storybook": "build-storybook"
+  }
+}

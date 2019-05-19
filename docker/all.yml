@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  storybook:
+    image: yosmy/node
+    container_name: entrance_storybook
+    ports:
+      - 6006:6006
+    volumes:
+      - ../:/app
+    networks:
+      - frontend
+    working_dir: /app/
+    command: "npm run storybook"
+
+networks:
+  frontend:
+    external: true
